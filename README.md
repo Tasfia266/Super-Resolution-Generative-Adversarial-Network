@@ -6,5 +6,5 @@ constructed image and the feature map of reference images. And the adversarial l
 
 For training, first of all we have to download the dataset. Gan needs sufficient data and an extensive amount of time for training. Any banchmark dataset can be used. Here, for low resolution images, 
 the image shape is 96x96x3 and for high resolution images, the image shape is 384x384x3. We have to resize the low and high resolution image and keep these in seperate directories. 
-Then we have to load and scale by images in the range of [0,1].We can create a list of low and high resolution images in batches and a batch of images will be fatched during training. Here the model 
+Then we have to load and scale the images in the range of [0,1].We can create a list of low and high resolution images in batches and a batch of images will be fatched during training. Here the model 
 is trained on Google Colab with free GPU. Still, its better to have an external GPU for training the Gan model properly. 
