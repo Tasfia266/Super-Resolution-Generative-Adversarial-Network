@@ -1,5 +1,6 @@
 # Super-Resolution-Generative-Adversarial-Network
-The super resolution generative adversarial network converts low resolution images to high resolution image. The model consists of 2 blocks. 1. Discriminator and 2. Generator. 
+The super resolution generative adversarial network converts low resolution images to high resolution image. The model consists of 2 blocks. 1. Discriminator and 2. Generator. The generator generates the high resolution images and the discriminator distinguishes between original high resolution images and generated images. ![generator_dis](https://user-images.githubusercontent.com/76652458/188276073-67470a6f-d406-4033-91ee-b816ea77c3ef.png)
+
 For training, we can obtain the low resolution images by applying gaussian filter to high resolution images. One of the main contributions in super resolution gan is the perceptual 
 loss function which typically consists of VGG based content loss and adversarial loss. VGG loss can be defined as the euclidean distance between feature representation of a 
 constructed image and the feature map of reference images. And the adversarial loss is simply the binary-crossentropy loss. 
