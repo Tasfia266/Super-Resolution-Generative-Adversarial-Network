@@ -9,3 +9,6 @@ For training, first of all we have to download the dataset. Gan needs sufficient
 the image shape is 96x96x3 and for high resolution images, the image shape is 384x384x3. We have to resize the low and high resolution image and keep these in seperate directories. 
 Then we have to load and scale the images in the range of [0,1].We can create a list of low and high resolution images in batches and a batch of images will be fatched during training. Here the model 
 is trained on Google Colab with free GPU. Still, its better to have an external GPU for training the Gan model properly. 
+# References 
+1. https://medium.com/@ramyahrgowda/srgan-paper-explained-3d2d575d09ff
+2. https://github.com/AnjanaGJoseph/Super-Resolution-GAN
